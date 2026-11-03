@@ -338,56 +338,6 @@ Connectly- Social Media Plateform/
 
 ---
 
-## ⚡ Quickstart & Installation
-
-### Prerequisites
-- **Python 3.10+** (tested up to Python 3.14)
-- **pip** package manager
-- **Git**
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/shivangsaxena1011/Connectly-Social-Media-Plateform.git
-cd "Connectly- Social Media Plateform"
-```
-
-### 2. Set Up Virtual Environment
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run Database Migrations
-```bash
-python manage.py migrate
-```
-
-### 5. Seed the Database with Realistic Demo Data
-Populate 5 demo creator accounts, profile images, sample posts, likes, comments, and follow relationships:
-```bash
-python populate_db.py
-```
-
-### 6. Launch the Local Development Server
-```bash
-python manage.py runserver
-```
-
-Open your browser and visit: **`http://127.0.0.1:8000/`**  
-The Django Admin panel is available at: **`http://127.0.0.1:8000/admin/`**
-
----
-
 ## 👥 Demo Accounts
 
 The database seeder automatically creates 5 realistic creator accounts (all passwords: **`connectly123`**):
@@ -399,27 +349,6 @@ The database seeder automatically creates 5 realistic creator accounts (all pass
 | **`rahul`** | Rahul Verma | Full Stack Explorer | `rahul@connectly.app` |
 | **`priya`** | Priya Patel | Travel Photographer | `priya@connectly.app` |
 | **`alex`** | Alex Chen | Software Architect | `alex@connectly.app` |
-
----
-
-## 🧪 Automated Testing
-
-Connectly includes a comprehensive automated test suite covering models, soft deletion, unique constraints, self-follow prevention, authentication, email login, and AJAX endpoints:
-
-```bash
-python manage.py test
-```
-
-### Test Results
-```text
-Creating test database for alias 'default'...
-..............
-----------------------------------------------------------------------
-Ran 14 tests in 10.593s
-
-OK
-Destroying test database for alias 'default'...
-```
 
 ---
 
