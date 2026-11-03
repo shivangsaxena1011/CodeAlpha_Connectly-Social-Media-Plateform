@@ -13,73 +13,73 @@
 
 <p align="center">
   <a href="https://connectly-social-media-plateform.onrender.com/"><img src="https://img.shields.io/badge/Live%20Demo-Render-4648d4?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.14+-3776AB?style=flat&logo=python&logoColor=white" alt="Python 3.14+" />
-  <img src="https://img.shields.io/badge/Django-6.1-092E20?style=flat&logo=django&logoColor=white" alt="Django 6.1" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Database-SQLite%20%7C%20PostgreSQL-4169E1?style=flat&logo=sqlite&logoColor=white" alt="Database" />
-  <img src="https://img.shields.io/badge/Tests-14%20Passed-10B981?style=flat&logo=pytest&logoColor=white" alt="Tests" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+  <img src="https://img.shields.io/badge/Python-3.14+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.14+" />
+  <img src="https://img.shields.io/badge/Django-6.1-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django 6.1" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Database-SQLite%20%7C%20PostgreSQL-4169E1?style=for-the-badge&logo=sqlite&logoColor=white" alt="Database" />
+  <img src="https://img.shields.io/badge/Tests-14%20Passed-10B981?style=for-the-badge&logo=pytest&logoColor=white" alt="Tests" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License" />
 </p>
 
 ---
 
-## 📖 Table of Contents
+## 📌 Project Overview
 
-- [Overview](#-overview)
-- [Infographics & Architecture](#-infographics--architecture)
-- [Key Features](#-key-features)
-- [Tech Stack](#-tech-stack)
-- [Project Directory Structure](#-project-directory-structure)
-- [Quickstart & Installation](#-quickstart--installation)
-- [Demo Accounts](#-demo-accounts)
-- [Running Automated Tests](#-running-automated-tests)
-- [API & URL Endpoints](#-api--url-endpoints)
-- [Documentation Index](#-documentation-index)
-- [License](#-license)
+**Connectly** is a full-stack mini social media platform developed for **CodeAlpha (Task 2 — Social Media Platform)**. It demonstrates core principles of full-stack web engineering, database architecture, session authentication, AJAX-driven reactivity, and responsive UI design.
 
----
+Connectly unites essential social networking capabilities into a single, cohesive experience: user profile customization, chronological and filtered social feeds, rich post creation (with text and image uploads), real-time liking with micro-animations, instant comment threads, follower/following networks, in-app notification alerts, and discovery search.
 
-## 🌟 Overview
-
-**Connectly** is designed to provide an expressive, distraction-free space for creators, students, and developers to share updates, engage in discussions, and build close-knit communities.
-
-Built on the **Vibrant Connection** design system, Connectly pairs the dependability of Django's Model-View-Template architecture with tactile, pill-styled UI components, smooth client-side AJAX updates, and an optimized normalized relational schema.
+| Detail | Specification |
+|---|---|
+| **Organization** | **CodeAlpha** |
+| **Internship Task** | **Task 2 — Social Media Platform** |
+| **Project Type** | Full-Stack Web Application |
+| **Live URL** | [https://connectly-social-media-plateform.onrender.com/](https://connectly-social-media-plateform.onrender.com/) |
+| **GitHub Repository** | [shivangsaxena1011/Connectly-Social-Media-Plateform](https://github.com/shivangsaxena1011/Connectly-Social-Media-Plateform) |
 
 ---
 
-## 📊 Infographics & Architecture
+## 🎯 Project Objectives
 
-The repository includes complete architecture diagrams, blueprints, and engineering documentation:
+- **Full-Stack Architecture:** Build a modular Model-View-Template (MVT) Django application integrated with modern frontend tooling.
+- **Robust Authentication:** Provide secure registration, email-or-username login, hashed passwords, and session handling.
+- **Relational Data Modeling:** Design a normalized schema with relational integrity, compound indexes, and unique/check constraints.
+- **Interactive User Experience:** Deliver fast, page-refresh-free actions (likes, comments, follows) using vanilla JavaScript and the Fetch API.
+- **Security & Authorization:** Enforce ownership verification for editing/deletion, strict CSRF validation, and input sanitization.
+- **Production Readiness:** Configure WhiteNoise static asset serving, Gunicorn WSGI runtime, automated database migrations, and cloud hosting deployment.
+
+---
+
+## 📊 Infographics & Architecture Diagrams
+
+The project includes complete engineering diagrams, schema designs, and design briefs:
 
 ### 1. Implementation Roadmap
-Full 7-day development roadmap from project setup to testing, documentation, and deployment.
+Complete development roadmap detailing the step-by-step implementation phases from Day 1 to deployment.
 <p align="center">
   <img src="docs/images/Connectly%20Django%20Implementation%20Roadmap.png" alt="Django Implementation Roadmap" width="850" />
 </p>
 
 ### 2. Backend Database Schema & ER Model
-Normalized database design covering User, Profile, Post, Comment, Like, Follow, and Notification models with integrity constraints.
+Normalized database design covering User, Profile, Post, Comment, Like, Follow, and Notification models with integrity rules.
 <p align="center">
   <img src="docs/images/Connectly%20Backend%20Schema%20Infographic.png" alt="Backend Database Schema" width="850" />
 </p>
 
 ### 3. UI/UX Design Brief
-Color palette (Electric Indigo, Vivid Pink, Emerald Accent), typography (Plus Jakarta Sans & Inter), and component guidelines.
+Color palette (Electric Indigo, Vivid Pink, Emerald Accent), typography (Plus Jakarta Sans & Inter), and component design tokens.
 <p align="center">
   <img src="docs/images/Connectly%20UI_UX%20Design%20Brief.png" alt="UI/UX Design Brief" width="850" />
 </p>
 
 ### 4. Application Flowchart
-User journeys covering Registration, Feeds, Post Interactions, and Follow workflows.
+User journeys covering Registration & Login, Home Feed, Post Creation, Interactions, and Follow workflows.
 <p align="center">
   <img src="docs/images/Connectly%20Social%20Media%20App%20Flowchart.png" alt="Application Flowchart" width="850" />
 </p>
 
 ### 5. Product Requirements Document (PRD)
-Product vision, target personas, MVP features, and success metrics.
+Product vision, target personas, MVP requirements, non-functional criteria, and success metrics.
 <p align="center">
   <img src="docs/images/Connectly%20Social%20Media%20PRD%20Infographic.png" alt="PRD Infographic" width="850" />
 </p>
@@ -92,132 +92,272 @@ High-level system architecture, security considerations, and query optimizations
 
 ---
 
-## ✨ Key Features
+## ✨ Features & Capabilities
 
-- **👤 User Management & Profiles**
-  - Registration with duplicate email prevention and password verification.
-  - Auto-generated Profile records via Django post-save signals.
-  - Editable profiles with custom avatars, bios, location, and website links.
-  - Profile statistics tracking post count, follower count, and following count.
+### 🔐 User Authentication & Account Management
+- **Registration & Verification:** Unique username and email validation with duplicate checks and password confirmation.
+- **Flexible Login:** Sign in using either username or email address.
+- **Session-Based Auth:** Built-in Django session management with secure cookie handling.
+- **Protected Views:** Login-required decorators protecting feeds, profiles, settings, and interactive endpoints.
+- **Auto-Provisioned Profiles:** Django `post_save` signals automatically create user profiles upon registration.
 
-- **📝 Post Management**
-  - Create posts with rich text and optional image uploads.
-  - In-feed quick composer and modal dialog with live image preview.
-  - Post owner controls: edit post content and soft-delete (`is_deleted=True`).
-  - Dedicated post detail pages with threaded comments.
+### 👤 User Profiles & Customization
+- **Personalized Header & Bio:** Displays custom avatar, cover gradient, biography, location, and personal website links.
+- **Profile Customization (`/profile/edit/`):** Real-time client avatar preview and form validation.
+- **Statistics Counters:** Dynamic metrics for post count, follower count, and following count.
+- **Content Tabs:** Filter profile views by **Posts**, **Media** (photo-only posts), and **Likes** (posts liked by the user).
 
-- **❤️ Likes & Reactions**
-  - Instant like/unlike toggling via asynchronous AJAX requests (no page refreshes).
-  - Tactile heart pulse micro-animations and live count updates.
-  - Database unique constraints preventing duplicate likes.
+### 📝 Posts Management
+- **Rich Post Creation:** Create posts with text and optional photo uploads via an in-timeline composer or dedicated modal dialog.
+- **Chronological Feeds:** Newest posts appear first with formatted relative timestamps (`naturaltime`).
+- **Post Ownership & Soft Deletion:** Edit post content or soft-delete posts (`is_deleted=True`) with author permission verification.
+- **Dedicated Thread Pages (`/post/<id>/`):** View full post media, shareable permalink, and complete discussion thread.
 
-- **💬 Comments System**
-  - Real-time comment submission via AJAX with immediate DOM insertion.
-  - Author and post-owner deletion permissions.
+### ❤️ Interactive Like System
+- **Real-Time AJAX Toggling:** Like and unlike posts without page reloads.
+- **Micro-Animations:** Heart pulse animation with dynamic icon filling and immediate counter updates.
+- **Database Constraints:** `UniqueConstraint(fields=['post', 'user'])` prevents duplicate likes.
 
-- **🤝 Follow System & Dual Feeds**
-  - Follow/unfollow users with instantaneous count updates.
-  - Database check constraints preventing self-following.
-  - **For You Feed:** Global community timeline.
-  - **Following Feed:** Curated timeline strictly featuring followed creators.
+### 💬 Threaded Comments System
+- **Instant Commenting:** Submit comments via AJAX with immediate DOM insertion.
+- **Author Attribution:** Displays author avatar, name, handle, and timestamp.
+- **Moderation & Deletion:** Both comment authors and the post owner have permissions to remove comments.
+- **Pre-fetched Comments:** Optimized queries pre-fetch non-deleted comments to prevent N+1 queries.
 
-- **🔍 Explore & Discovery**
-  - Explore page with category filters (Tech, Design, Photography, Community).
-  - Search engine for discovering people and posts.
-  - Featured creator recommendations with one-click follow buttons.
+### 🤝 Follow System & Dual Feed
+- **Follow / Unfollow:** Toggle following status across profile pages, suggested lists, and search results.
+- **Integrity Constraints:** Database check constraints (`follower != following`) and unique constraints prevent duplicate or self-following.
+- **Dual Feed Modes:**
+  - **For You:** Global community timeline.
+  - **Following:** Curated timeline strictly featuring content from accounts you follow.
+- **Followers & Following Directories:** Dedicated screens listing all followers and followed accounts.
 
-- **🔔 Activity Notifications**
-  - In-app notification center tracking likes, comments, and new followers.
+### 🔍 Explore, Search & Notifications
+- **Explore Hub (`/explore/`):** Discover featured creators and trending posts categorized by topic (Tech, Design, Photography, Community).
+- **Global Search (`/search/`):** Search users by name/handle and posts by keyword content.
+- **Activity Notifications (`/notifications/`):** In-app notification center alerting users when someone likes their post, comments on their post, or follows them.
+- **Dynamic Unread Badge:** Live count of unread notifications in sidebar and mobile navigation.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Technology Stack
 
-| Layer | Technology | Description |
+| Layer | Technology | Details |
 |---|---|---|
-| **Backend** | Python 3.14+, Django 6.1 | MVC/MVT architecture, ORM, authentication |
-| **Database** | SQLite (Dev) / PostgreSQL (Prod) | Normalized relational models with foreign keys & compound indexes |
-| **Frontend** | HTML5, Tailwind CSS | Responsive utility-first styling with custom theme palette |
-| **Typography** | Plus Jakarta Sans & Inter | Modern rounded headings and crisp body text |
-| **Icons** | Material Symbols Outlined | Clean Google iconography |
-| **Scripting** | Vanilla JavaScript (ES6+) | Asynchronous Fetch API, CSRF tokens, dynamic DOM manipulation |
-| **Media** | Pillow (PIL) | Image verification, uploads, and format handling |
+| **Backend Framework** | **Python 3.14+ / Django 6.1** | MVT pattern, ORM, authentication, form validation, signal dispatchers |
+| **Frontend & Styling** | **HTML5, Tailwind CSS 3.4** | Utility-first responsive design following the *Vibrant Connection* design system |
+| **Typography & Icons** | **Plus Jakarta Sans, Inter, Material Symbols** | Rounded modern typography and Google Material Symbols |
+| **Client Scripting** | **JavaScript (ES6+)** | Fetch API, CSRF cookie handling, DOM manipulation, image previewers |
+| **Database & ORM** | **SQLite (Dev) / PostgreSQL (Prod)** | Normalized relational schema managed via Django ORM and `dj-database-url` |
+| **Static & Media Serving**| **WhiteNoise, Pillow (PIL)** | In-process static asset delivery with gzip/brotli caching, image validation |
+| **WSGI Server** | **Gunicorn 26.2** | High-performance Python WSGI HTTP server |
+| **Development & Tools** | **Google Antigravity, VS Code, Git, GitHub** | Local development, testing, source control, and GitHub repository |
+| **Deployment Platform** | **Render** | Live cloud production deployment with automated CI/CD pipeline |
+
+---
+
+## 📐 System Architecture & Data Flow
+
+```
+[ Client Browser (Desktop / Tablet / Mobile) ]
+                      │
+           HTTPS (HTML / CSS / JS)
+                      ▼
+            [ Gunicorn WSGI Server ]
+                      │
+           [ WhiteNoise (Static Assets) ]
+                      │
+         [ Django Application Core (MVT) ]
+   ├── Authentication & Session Middleware
+   ├── CSRF Verification Middleware
+   ├── URL Dispatcher (connectly/urls.py)
+   ├── View Controllers & AJAX APIs (social/views.py)
+   └── Django Signals (Profile auto-creation, Notifications)
+                      │
+           ┌──────────┴──────────┐
+           ▼                     ▼
+[ Database Layer ]      [ Media Storage ]
+  • SQLite / PostgreSQL    • /media/posts/
+  • Normalized Schema      • /media/profiles/
+  • Compound Indexes       • Pillow Validation
+```
+
+---
+
+## 🗄 Database Design & Schema
+
+The application builds on Django's `auth_user` model alongside 6 custom relational models:
+
+```mermaid
+erDiagram
+    User ||--o| Profile : "One-to-One"
+    User ||--o{ Post : "creates (1-N)"
+    User ||--o{ Comment : "writes (1-N)"
+    Post ||--o{ Comment : "has (1-N)"
+    User ||--o{ Like : "likes (1-N)"
+    Post ||--o{ Like : "receives (1-N)"
+    User ||--o{ Follow : "follower"
+    User ||--o{ Follow : "following"
+    User ||--o{ Notification : "recipient"
+
+    User {
+        int id PK
+        string username UK
+        string email UK
+        string password
+        string first_name
+        string last_name
+        datetime date_joined
+    }
+    Profile {
+        int id PK
+        int user_id FK,UK
+        text bio
+        string profile_picture
+        string website
+        string location
+        datetime created_at
+    }
+    Post {
+        int id PK
+        int user_id FK
+        text content
+        string image
+        bool is_deleted
+        datetime created_at
+    }
+    Comment {
+        int id PK
+        int post_id FK
+        int user_id FK
+        text content
+        bool is_deleted
+        datetime created_at
+    }
+    Like {
+        int id PK
+        int post_id FK
+        int user_id FK
+        datetime created_at
+    }
+    Follow {
+        int id PK
+        int follower_id FK
+        int following_id FK
+        datetime created_at
+    }
+    Notification {
+        int id PK
+        int recipient_id FK
+        int sender_id FK
+        string notification_type
+        int post_id FK
+        bool is_read
+        datetime created_at
+    }
+```
+
+### Constraints & Integrity Rules
+- **One Profile per User:** Enforced through `OneToOneField(User)`.
+- **Unique Post Likes:** `UniqueConstraint(fields=['post', 'user'])` prevents duplicate likes.
+- **Unique Follows & Anti-Self Follow:** `UniqueConstraint(fields=['follower', 'following'])` and `CheckConstraint(condition=~Q(follower=F('following')))` prevent duplicate follows and self-following.
+- **Soft Deletion:** Posts and Comments include `is_deleted=models.BooleanField(default=False)` with a custom `ActivePostManager`.
 
 ---
 
 ## 📁 Project Directory Structure
 
-```
+```text
 Connectly- Social Media Plateform/
-├── connectly/                   # Django Project Root
+│
+├── connectly/                   # Django Project Root Configuration
 │   ├── __init__.py
-│   ├── settings.py              # Environment settings, templates, static/media configuration
-│   ├── urls.py                  # Global route dispatcher
-│   ├── wsgi.py
+│   ├── settings.py              # Settings, middleware, WhiteNoise, database config
+│   ├── urls.py                  # Global URL dispatcher
+│   ├── wsgi.py                  # WSGI entrypoint for Gunicorn
 │   └── asgi.py
+│
 ├── social/                      # Core Social Application
 │   ├── __init__.py
-│   ├── admin.py                 # Customized Django admin with soft-delete actions
-│   ├── apps.py                  # App configuration & signal registration
-│   ├── forms.py                 # Registration, Profile, Post, and Comment forms
-│   ├── models.py                # User, Profile, Post, Comment, Like, Follow, Notification
-│   ├── signals.py               # Post-save signals for Profile creation & notifications
-│   ├── urls.py                  # Application URL routing
+│   ├── admin.py                 # Admin site setup with soft-delete actions
+│   ├── apps.py                  # App config & signal dispatcher registration
+│   ├── forms.py                 # UserRegistration, Login, Profile, Post, Comment forms
+│   ├── models.py                # Profile, Post, Comment, Like, Follow, Notification models
+│   ├── signals.py               # Post-save signals for profile creation & notifications
+│   ├── urls.py                  # Application route definitions
 │   ├── views.py                 # View controllers & AJAX handlers
-│   ├── tests.py                 # Unit & integration test suites
-│   └── migrations/              # Database migration files
-├── templates/                   # Clean, modular Django templates
-│   ├── base.html                # Master layout with sidebar & bottom navigation
+│   ├── tests.py                 # Automated unit and integration test suite (14 tests)
+│   ├── migrations/              # Database migration history
+│   └── templatetags/            # Custom Django template filters (is_liked_by, is_following)
+│       ├── __init__.py
+│       └── social_tags.py
+│
+├── templates/                   # Modular Django Templates
+│   ├── base.html                # Master layout with responsive navigation & modals
 │   ├── registration/
-│   │   ├── login.html           # Branded login screen
-│   │   └── register.html        # Branded registration screen
+│   │   ├── login.html           # Login screen (supports username or email)
+│   │   └── register.html        # Registration screen
 │   └── social/
-│       ├── feed.html            # Main home feed with "For You" & "Following" tabs
+│       ├── feed.html            # Chronological feed with "For You" & "Following" tabs
 │       ├── explore.html         # Explore & creator discovery page
 │       ├── profile.html         # Public profile with Posts, Media, and Likes tabs
-│       ├── profile_edit.html    # Profile customization screen
-│       ├── post_detail.html     # Post thread and comments view
-│       ├── post_form.html       # Post create/edit standalone fallback
+│       ├── profile_edit.html    # Profile & settings customization
+│       ├── post_detail.html     # Threaded discussion view
+│       ├── post_form.html       # Standalone post creator / editor
 │       ├── followers_list.html  # Dedicated followers / following directory
-│       ├── notifications.html   # Notification center
-│       └── search_results.html  # People and post search results
-├── static/
-│   ├── css/style.css            # Micro-animations, scrollbar hiding, toast styles
-│   ├── js/app.js                # CSRF handler, AJAX like/follow/comment managers
-│   └── images/                  # Default avatars and cover placeholders
-├── media/                       # Uploaded media directory
+│       ├── notifications.html   # Activity notification center
+│       └── search_results.html  # Search results for users and posts
+│
+├── static/                      # Static Assets
+│   ├── css/style.css            # Custom CSS, micro-animations, scrollbar utilities
+│   ├── js/app.js                # AJAX handlers (likes, follows, comments, toasts, previews)
+│   └── images/                  # Default avatars and placeholder graphics
+│
+├── staticfiles/                 # Collected static directory for WhiteNoise
+│
+├── media/                       # User-uploaded media
 │   ├── posts/
 │   └── profiles/
-├── docs/                        # Complete technical documentation & assets
-│   ├── images/                  # All 6 Infographics + UI screen previews
+│
+├── docs/                        # Project Documentation & Architecture Graphics
+│   ├── images/                  # High-resolution infographics & screen previews
 │   ├── PRD.md                   # Product Requirements Document
 │   ├── TRD.md                   # Technical Requirements Document
-│   ├── SCHEMA.md                # Schema & Constraint Specification
 │   ├── ROADMAP.md               # 7-Day Implementation Plan
 │   └── FLOWCHART.md             # Application Flowchart Documentation
-├── populate_db.py               # Seed script with 5 demo accounts, posts, likes, & follows
+│
+├── Procfile                     # Web process definition for Gunicorn
+├── build.sh                     # Production build script (migrate, collectstatic, seed)
+├── render.yaml                  # Infrastructure-as-code configuration for Render
+├── populate_db.py               # Database seeder with realistic demo accounts & content
 ├── manage.py                    # Django management script
-├── requirements.txt             # Project dependencies
+├── requirements.txt             # Python package dependencies
+├── LICENSE                      # MIT License
 └── README.md                    # Project documentation
 ```
 
 ---
 
-## 🚀 Quickstart & Installation
+## ⚡ Quickstart & Installation
 
-### 1. Clone the repository
+### Prerequisites
+- **Python 3.10+** (tested up to Python 3.14)
+- **pip** package manager
+- **Git**
+
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/shivangsaxena1011/Connectly-Social-Media-Plateform.git
 cd "Connectly- Social Media Plateform"
 ```
 
-### 2. Set up a Virtual Environment
+### 2. Set Up Virtual Environment
 ```bash
-# On Windows
+# Windows
 python -m venv venv
 venv\Scripts\activate
 
-# On macOS / Linux
+# macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -227,54 +367,55 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Run Migrations
+### 4. Run Database Migrations
 ```bash
 python manage.py migrate
 ```
 
 ### 5. Seed the Database with Realistic Demo Data
-Populate demo users, profiles, sample media posts, likes, and followers:
+Populate 5 demo creator accounts, profile images, sample posts, likes, comments, and follow relationships:
 ```bash
 python populate_db.py
 ```
 
-### 6. Start the Development Server
+### 6. Launch the Local Development Server
 ```bash
 python manage.py runserver
 ```
 
-Open your browser and navigate to: **`http://127.0.0.1:8000/`**
+Open your browser and visit: **`http://127.0.0.1:8000/`**  
+The Django Admin panel is available at: **`http://127.0.0.1:8000/admin/`**
 
 ---
 
 ## 👥 Demo Accounts
 
-The database seeder automatically creates 5 realistic creator accounts (all passwords: `connectly123`):
+The database seeder automatically creates 5 realistic creator accounts (all passwords: **`connectly123`**):
 
-| Username | Name | Role | Notes |
+| Username | Full Name | Role | Email |
 |---|---|---|---|
-| **`shivang`** | Shivang Saxena | Lead Developer / Superuser | Access to Django Admin at `/admin/` |
-| **`ananya`** | Ananya Sharma | Product Designer | Profile with portfolio & design posts |
-| **`rahul`** | Rahul Verma | Full Stack Explorer | Tech discussions & code snippets |
-| **`priya`** | Priya Patel | Landscape Photographer | Posts with photo media |
-| **`alex`** | Alex Chen | Software Architect | Architecture & backend posts |
+| **`shivang`** | Shivang Saxena | Superuser / Lead Developer | `shivang@connectly.app` |
+| **`ananya`** | Ananya Sharma | Product Designer | `ananya@connectly.app` |
+| **`rahul`** | Rahul Verma | Full Stack Explorer | `rahul@connectly.app` |
+| **`priya`** | Priya Patel | Travel Photographer | `priya@connectly.app` |
+| **`alex`** | Alex Chen | Software Architect | `alex@connectly.app` |
 
 ---
 
-## 🧪 Running Automated Tests
+## 🧪 Automated Testing
 
-Connectly comes with an automated test suite covering models, soft deletion, unique constraints, self-follow prevention, authentication, and AJAX endpoints:
+Connectly includes a comprehensive automated test suite covering models, soft deletion, unique constraints, self-follow prevention, authentication, email login, and AJAX endpoints:
 
 ```bash
 python manage.py test
 ```
 
-Expected output:
+### Test Results
 ```text
 Creating test database for alias 'default'...
-...........
+..............
 ----------------------------------------------------------------------
-Ran 11 tests in 0.850s
+Ran 14 tests in 10.593s
 
 OK
 Destroying test database for alias 'default'...
@@ -286,77 +427,69 @@ Destroying test database for alias 'default'...
 
 | URL Pattern | Method | Description |
 |---|---|---|
-| `/` | `GET` | Home feed ("For You" and "Following" tabs) |
+| `/` | `GET` | Home Feed ("For You" and "Following" tabs) |
 | `/register/` | `GET`, `POST` | User registration |
-| `/login/` | `GET`, `POST` | User authentication |
-| `/logout/` | `GET`, `POST` | Session logout |
+| `/login/` | `GET`, `POST` | User login (accepts username or email) |
+| `/logout/` | `GET`, `POST` | Session termination |
 | `/explore/` | `GET` | Explore trending posts & recommended creators |
 | `/profile/<username>/` | `GET` | User profile page (Posts, Media, Likes tabs) |
-| `/profile/edit/` | `GET`, `POST` | Profile and account settings |
+| `/profile/edit/` | `GET`, `POST` | User profile and biography editor |
 | `/profile/<username>/followers/` | `GET` | User followers directory |
 | `/profile/<username>/following/` | `GET` | User following directory |
-| `/follow/<username>/` | `POST` | Follow/Unfollow toggle (AJAX JSON) |
-| `/post/create/` | `GET`, `POST` | Create post with optional photo |
-| `/post/<id>/` | `GET` | Post thread & comments view |
-| `/post/<id>/edit/` | `GET`, `POST` | Edit existing post |
-| `/post/<id>/delete/` | `POST` | Soft-delete post |
-| `/post/<id>/like/` | `POST` | Like/Unlike post toggle (AJAX JSON) |
-| `/post/<id>/comment/` | `POST` | Add comment to post (AJAX JSON) |
-| `/comment/<id>/delete/` | `POST` | Delete comment |
-| `/notifications/` | `GET` | View user notifications |
+| `/follow/<username>/` | `POST` | Follow / Unfollow toggle (AJAX JSON / redirect) |
+| `/post/create/` | `GET`, `POST` | Create post with optional image upload |
+| `/post/<id>/` | `GET` | Post detail view with threaded comments |
+| `/post/<id>/edit/` | `GET`, `POST` | Edit existing post (author only) |
+| `/post/<id>/delete/` | `POST` | Soft-delete post (author only) |
+| `/post/<id>/like/` | `POST` | Like / Unlike post toggle (AJAX JSON / redirect) |
+| `/post/<id>/comment/` | `POST` | Add comment to post (AJAX JSON / redirect) |
+| `/comment/<id>/delete/` | `POST` | Delete comment (author or post owner) |
+| `/notifications/` | `GET` | In-app activity notifications |
 | `/search/` | `GET` | Search users and posts by keyword |
 
 ---
 
-## ☁️ Deployment Guide
+## 🔒 Security & Data Integrity
 
-Connectly is pre-configured with `gunicorn`, `whitenoise`, and `dj-database-url` for instant production deployment:
-
-### Option 1: Render (Recommended — Free / Zero-Config)
-1. Fork or push your code to your GitHub account: `https://github.com/shivangsaxena1011/Connectly-Social-Media-Plateform`.
-2. Go to [Render Dashboard](https://dashboard.render.com/) and click **New + > Web Service**.
-3. Connect your GitHub repository: `Connectly-Social-Media-Plateform`.
-4. Configure settings:
-   - **Environment:** `Python 3`
-   - **Build Command:** `./build.sh`
-   - **Start Command:** `gunicorn connectly.wsgi:application`
-5. Under **Advanced > Add Environment Variable**:
-   - `DJANGO_DEBUG` = `False`
-   - `DJANGO_SECRET_KEY` = `<click Generate>`
-   - `PYTHON_VERSION` = `3.12.0`
-6. Click **Create Web Service**. Render will automatically run the build script, collect static files, apply migrations, seed demo accounts, and launch your live site!
-
-### Option 2: Railway
-1. Go to [Railway.app](https://railway.app/) and create a **New Project**.
-2. Select **Deploy from GitHub repo** and pick `Connectly-Social-Media-Plateform`.
-3. Add a **PostgreSQL Database** service to the project. Railway automatically exposes `DATABASE_URL`, which Connectly automatically binds to!
-4. Under project settings, set `DJANGO_DEBUG` = `False`.
-5. Railway uses the included `Procfile` to start the app automatically.
-
-### Option 3: PythonAnywhere
-1. Create a free account at [PythonAnywhere.com](https://www.pythonanywhere.com/).
-2. Open a **Bash Console** and clone the repository:
-   ```bash
-   git clone https://github.com/shivangsaxena1011/Connectly-Social-Media-Plateform.git
-   ```
-3. Set up a virtual environment and install `requirements.txt`.
-4. In the **Web** tab:
-   - Point the Source Code directory to the project folder.
-   - Set up the WSGI file to load `connectly.wsgi`.
-   - Map `/static/` to `c:/.../staticfiles/` and `/media/` to `c:/.../media/`.
-5. Reload the web app.
+- **Password Hashing:** Django PBKDF2 with SHA-256 password hashing.
+- **Cross-Site Request Forgery (CSRF):** Enforced on all mutation requests and AJAX headers via `X-CSRFToken`.
+- **Strict Authorization:** Server-side ownership validation prevents unauthorized editing or deleting of posts and comments.
+- **SQL Injection Prevention:** 100% parameterized queries via Django ORM.
+- **Relational Integrity:** Unique constraints prevent duplicate likes and duplicate follows; database check constraints prevent self-following.
+- **Environment Variables:** Sensitive parameters (`DJANGO_SECRET_KEY`, `DATABASE_URL`) isolated from version control.
 
 ---
 
-## 📚 Documentation Index
+## 💡 Learning Outcomes (Internship Experience)
 
-- [Product Requirements Document (PRD)](docs/PRD.md)
-- [Technical Requirements Document (TRD)](docs/TRD.md)
-- [7-Day Implementation Roadmap](docs/ROADMAP.md)
-- [Application Flowchart](docs/FLOWCHART.md)
+Working on Connectly as part of the **CodeAlpha Internship Program (Task 2)** provided hands-on experience in:
+
+- **End-to-End Web Development:** Architecting full-stack applications with Python, Django, and modern frontend tools.
+- **Relational Schema Engineering:** Implementing normalized database models, compound indexes, and database integrity constraints.
+- **Asynchronous User Interactions:** Combining Django view controllers with vanilla JavaScript Fetch API for real-time feed updates.
+- **State & Session Management:** Managing user authentication, permissions, and signals for automated background tasks.
+- **Production Deployment Workflows:** Preparing applications for live cloud deployment with Gunicorn, WhiteNoise, and Render.
+- **Software Quality Assurance:** Writing automated unit and integration tests to validate security, constraints, and edge cases.
+
+---
+
+## 🔮 Future Enhancements
+
+- [ ] **Direct Messaging (DMs):** Private chat between mutual followers.
+- [ ] **Real-Time WebSockets:** Live timeline streaming via Django Channels.
+- [ ] **Post Bookmarking:** Personal saved collections.
+- [ ] **Hashtags & Mentions:** Automated hashtag indexing and user `@mention` tagging.
+- [ ] **Dark Mode:** System and manual dark theme switcher.
+- [ ] **Cloud Object Storage:** Integration with AWS S3 or Cloudinary for scalable media uploads.
+
+---
+
+## 🏆 Acknowledgement
+
+Special thanks to **CodeAlpha** for providing the opportunity to work on this project as part of the **CodeAlpha Internship Program**.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
