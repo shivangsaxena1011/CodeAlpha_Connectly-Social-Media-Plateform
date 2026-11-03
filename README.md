@@ -7,6 +7,12 @@
 <p align="center">
   <strong>Share · Connect · Grow</strong><br>
   A modern, responsive, and scalable mini social media platform built with <strong>Django</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>.
+  <br><br>
+  🚀 <strong>Live Demo:</strong> <a href="https://connectly-social-media-plateform.onrender.com/" target="_blank"><strong>connectly-social-media-plateform.onrender.com</strong></a>
+</p>
+
+<p align="center">
+  <a href="https://connectly-social-media-plateform.onrender.com/"><img src="https://img.shields.io/badge/Live%20Demo-Render-4648d4?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a>
 </p>
 
 <p align="center">
